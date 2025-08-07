@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedCare Pro - Professional Medical Services</title>
+    <meta name="description" content="Professional medical services with experienced doctors. Book your appointment today!">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'medical-blue': '#2563eb',
+                        'medical-green': '#059669',
+                        'medical-teal': '#0d9488',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <div id="header-container"></div>
+
+    <section class="bg-gradient-to-br from-medical-blue to-medical-teal text-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-5xl font-bold mb-6">Professional Medical Care</h1>
+                <p class="text-xl mb-8 text-blue-100">Expert healthcare services with compassionate care. Your health is our priority.</p>
+                <div class="space-x-4">
+                    <a href="contact.html" class="bg-white text-medical-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Book Appointment</a>
+                    <a href="services.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-medical-blue transition duration-300">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-medical-blue text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-md text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Expert Doctors</h3>
+                    <p class="text-gray-600">Experienced medical professionals with specialized expertise</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-medical-green text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">24/7 Emergency</h3>
+                    <p class="text-gray-600">Round-the-clock emergency medical services available</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-medical-teal text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Compassionate Care</h3>
+                    <p class="text-gray-600">Patient-centered approach with personalized treatment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Medical Services</h2>
+                <p class="text-xl text-gray-600">Comprehensive healthcare services for all your medical needs</p>
+            </div>
+            
+            <div id="services-preview-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="services.html" class="bg-medical-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">What Our Patients Say</h2>
+                <p class="text-xl text-gray-600">Hear from our satisfied patients about their experience</p>
+            </div>
+            
+            <div id="testimonials-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-medical-blue text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Get Started?</h2>
+            <p class="text-xl mb-8 text-blue-100">Book your appointment today and experience quality healthcare</p>
+            <a href="contact.html" class="bg-white text-medical-blue px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition duration-300">Schedule Appointment</a>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="js/header-footer.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

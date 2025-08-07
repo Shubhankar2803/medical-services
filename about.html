@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | MedCare Pro</title>
+    <meta name="description" content="Learn about MedCare Pro's mission to provide quality healthcare with experienced medical professionals.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'medical-blue': '#2563eb',
+                        'medical-green': '#059669',
+                        'medical-teal': '#0d9488',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <div id="header-container"></div>
+
+    <section class="bg-gradient-to-r from-medical-blue to-medical-teal text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-4">About MedCare Pro</h1>
+                <p class="text-xl text-blue-100">Dedicated to providing exceptional healthcare services</p>
+                <nav class="mt-6">
+                    <ol class="flex justify-center space-x-2 text-blue-200">
+                        <li><a href="index.html" class="hover:text-white">Home</a></li>
+                        <li class="mx-2">/</li>
+                        <li class="text-white">About</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Mission</h2>
+                    <p class="text-lg text-gray-600 mb-4">
+                        At MedCare Pro, we are committed to providing exceptional healthcare services with compassion, 
+                        expertise, and innovation. Our mission is to improve the health and well-being of our community 
+                        through comprehensive medical care.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        We believe that quality healthcare should be accessible to everyone. Our team of experienced 
+                        medical professionals works tirelessly to ensure that each patient receives personalized, 
+                        evidence-based care in a comfortable and supportive environment.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-medical-blue text-white rounded-full flex items-center justify-center">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">15+ Years</h4>
+                                <p class="text-gray-600">Experience</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-medical-green text-white rounded-full flex items-center justify-center">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">50,000+</h4>
+                                <p class="text-gray-600">Patients Served</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Why Choose MedCare Pro?</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-medical-green"></i>
+                            <span class="text-gray-700">Board-certified physicians</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-medical-green"></i>
+                            <span class="text-gray-700">State-of-the-art medical equipment</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-medical-green"></i>
+                            <span class="text-gray-700">24/7 emergency services</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-medical-green"></i>
+                            <span class="text-gray-700">Patient-centered approach</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-medical-green"></i>
+                            <span class="text-gray-700">Comprehensive care coordination</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Meet Our Doctors</h2>
+                <p class="text-xl text-gray-600">Experienced medical professionals dedicated to your health</p>
+            </div>
+            
+            <div id="doctors-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="js/header-footer.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

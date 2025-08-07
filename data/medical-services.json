@@ -1,0 +1,92 @@
+﻿{
+  "services": [
+    {
+      "id": 1,
+      "title": "General Medicine",
+      "description": "Comprehensive primary healthcare services for all ages including routine checkups and preventive care.",
+      "icon": "fas fa-stethoscope",
+      "price": "$80-150"
+    },
+    {
+      "id": 2,
+      "title": "Cardiology", 
+      "description": "Heart and cardiovascular system diagnosis and treatment by certified cardiologists.",
+      "icon": "fas fa-heartbeat",
+      "price": "$200-400"
+    },
+    {
+      "id": 3,
+      "title": "Pediatrics",
+      "description": "Specialized medical care for infants, children, and adolescents up to 18 years.",
+      "icon": "fas fa-baby",
+      "price": "$100-200"
+    },
+    {
+      "id": 4,
+      "title": "Dermatology",
+      "description": "Skin, hair, and nail disorders treatment with advanced dermatological procedures.",
+      "icon": "fas fa-user-check",
+      "price": "$120-250"
+    },
+    {
+      "id": 5,
+      "title": "Orthopedics",
+      "description": "Bone, joint, and muscle injuries treatment and surgical procedures.",
+      "icon": "fas fa-bone",
+      "price": "$150-500"
+    },
+    {
+      "id": 6,
+      "title": "Emergency Care",
+      "description": "24/7 emergency medical services for urgent and critical health conditions.",
+      "icon": "fas fa-ambulance",
+      "price": "$300-800"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "position": "Teacher",
+      "rating": 5,
+      "text": "Excellent care and professional staff. Dr. Smith helped me recover completely from my back injury."
+    },
+    {
+      "id": 2,
+      "name": "Michael Chen",
+      "position": "Engineer",
+      "rating": 5,
+      "text": "The cardiology team saved my life. Outstanding medical expertise and compassionate care throughout."
+    },
+    {
+      "id": 3,
+      "name": "Emily Davis",
+      "position": "Parent",
+      "rating": 5,
+      "text": "My kids love Dr. Rodriguez. She makes every visit comfortable and explains everything clearly."
+    }
+  ],
+  "doctors": [
+    {
+      "id": 1,
+      "name": "Dr. James Smith",
+      "specialization": "General Medicine",
+      "experience": "15 years",
+      "education": "MD from Harvard Medical School"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Maria Rodriguez",
+      "specialization": "Pediatrics", 
+      "experience": "12 years",
+      "education": "MD from Johns Hopkins University"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Robert Johnson",
+      "specialization": "Cardiology",
+      "experience": "20 years", 
+      "education": "MD from Mayo Medical School"
+    }
+  ]
+}
