@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | MedCare Pro</title>
-    <meta name="description" content="Contact MedCare Pro to schedule an appointment or get more information about our medical services.">
+    <title>Contact Us & Book Appointment | MedCare Pro - Schedule Medical Consultation</title>
+    <meta name="description" content="Contact MedCare Pro to schedule medical appointments. Call +1 (555) 123-4567 or book online. 24/7 emergency services available at 123 Health Street.">
+    <meta name="keywords" content="contact medcare pro, book appointment, medical consultation, schedule appointment, emergency services, medical center contact">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://shubhankar2803.github.io/medical-services/contact.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32'%3e%3crect width='32' height='32' rx='6' fill='%2310b981'/%3e%3cpath d='M16 8v16M8 16h16' stroke='white' stroke-width='3' stroke-linecap='round'/%3e%3c/svg%3e">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180' width='180' height='180'%3e%3crect width='180' height='180' rx='32' fill='%2310b981'/%3e%3cpath d='M90 40v100M40 90h100' stroke='white' stroke-width='16' stroke-linecap='round'/%3e%3c/svg%3e">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -12,9 +20,13 @@
             theme: {
                 extend: {
                     colors: {
-                        'medical-blue': '#2563eb',
-                        'medical-green': '#059669',
-                        'medical-teal': '#0d9488',
+                        'primary': '#10b981',
+                        'primary-dark': '#059669',
+                        'primary-light': '#34d399',
+                        'primary-50': '#ecfdf5',
+                        'primary-100': '#d1fae5',
+                        'secondary': '#6b7280',
+                        'accent': '#f3f4f6',
                     }
                 }
             }
@@ -22,18 +34,22 @@
     </script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50">
+<body class="bg-white text-gray-900">
     <div id="header-container"></div>
 
-    <section class="bg-gradient-to-r from-medical-blue to-medical-teal text-white py-16">
-        <div class="container mx-auto px-6">
-            <div class="text-center">
-                <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
-                <p class="text-xl text-blue-100">Schedule your appointment or get in touch with our medical team</p>
+    <section class="bg-gradient-to-r from-primary to-primary-dark py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-10"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div data-aos="fade-up" data-aos-duration="800" class="text-center">
+                <h1 class="text-5xl font-light mb-4 text-white">Contact Us</h1>
+                <p class="text-xl text-green-100 font-light">Schedule your appointment or get in touch with our team</p>
                 <nav class="mt-6">
-                    <ol class="flex justify-center space-x-2 text-blue-200">
-                        <li><a href="index.html" class="hover:text-white">Home</a></li>
+                    <ol class="flex justify-center space-x-2 text-green-200 font-light">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
                         <li class="mx-2">/</li>
                         <li class="text-white">Contact</li>
                     </ol>
@@ -42,44 +58,44 @@
         </div>
     </section>
 
-    <section class="py-16">
+    <section class="py-20">
         <div class="container mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-12">
-                <div class="bg-white p-8 rounded-lg shadow-lg">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Schedule an Appointment</h2>
-                    <p class="text-gray-600 mb-6">Fill out the form below and we'll contact you to confirm your appointment.</p>
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div data-aos="fade-right" data-aos-duration="800" class="bg-white p-10 rounded-3xl border border-gray-100">
+                    <h2 class="text-2xl font-light text-gray-900 mb-6">Schedule an Appointment</h2>
+                    <p class="text-secondary mb-8 font-light">Fill out the form below and we'll contact you to confirm your appointment.</p>
                     
                     <form class="space-y-6">
-                        <div class="grid md:grid-cols-2 gap-4">
+                        <div class="grid md:grid-cols-2 gap-6">
                             <div>
                                 <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
                                 <input type="text" id="firstName" name="firstName" required 
-                                       class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent">
+                                       class="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary focus:border-transparent font-light">
                             </div>
                             <div>
                                 <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
                                 <input type="text" id="lastName" name="lastName" required 
-                                       class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent">
+                                       class="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary focus:border-transparent font-light">
                             </div>
                         </div>
                         
-                        <div class="grid md:grid-cols-2 gap-4">
+                        <div class="grid md:grid-cols-2 gap-6">
                             <div>
                                 <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
                                 <input type="email" id="email" name="email" required 
-                                       class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent">
+                                       class="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary focus:border-transparent font-light">
                             </div>
                             <div>
                                 <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
                                 <input type="tel" id="phone" name="phone" required 
-                                       class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent">
+                                       class="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary focus:border-transparent font-light">
                             </div>
                         </div>
                         
                         <div>
                             <label for="service" class="block text-sm font-medium text-gray-700 mb-2">Medical Service *</label>
                             <select id="service" name="service" required 
-                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent">
+                                    class="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary focus:border-transparent font-light">
                                 <option value="">Select a service...</option>
                                 <option value="General Medicine">General Medicine</option>
                                 <option value="Cardiology">Cardiology</option>
@@ -90,16 +106,16 @@
                             </select>
                         </div>
                         
-                        <div class="grid md:grid-cols-2 gap-4">
+                        <div class="grid md:grid-cols-2 gap-6">
                             <div>
                                 <label for="preferredDate" class="block text-sm font-medium text-gray-700 mb-2">Preferred Date</label>
                                 <input type="date" id="preferredDate" name="preferredDate" 
-                                       class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent">
+                                       class="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary focus:border-transparent font-light">
                             </div>
                             <div>
                                 <label for="preferredTime" class="block text-sm font-medium text-gray-700 mb-2">Preferred Time</label>
                                 <select id="preferredTime" name="preferredTime" 
-                                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent">
+                                        class="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary focus:border-transparent font-light">
                                     <option value="">Select time...</option>
                                     <option value="Morning (8-12 AM)">Morning (8-12 AM)</option>
                                     <option value="Afternoon (12-4 PM)">Afternoon (12-4 PM)</option>
@@ -112,87 +128,87 @@
                             <label for="symptoms" class="block text-sm font-medium text-gray-700 mb-2">Symptoms / Reason for Visit</label>
                             <textarea id="symptoms" name="symptoms" rows="4" 
                                       placeholder="Please describe your symptoms or reason for the appointment..." 
-                                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent"></textarea>
+                                      class="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-primary focus:border-transparent font-light"></textarea>
                         </div>
                         
                         <div class="flex items-center">
                             <input type="checkbox" id="newsletter" name="newsletter" 
-                                   class="w-4 h-4 text-medical-blue border-gray-300 rounded focus:ring-medical-blue">
-                            <label for="newsletter" class="ml-2 text-sm text-gray-700">
+                                   class="w-4 h-4 text-primary border-gray-300 rounded focus:ring-primary">
+                            <label for="newsletter" class="ml-3 text-sm text-secondary font-light">
                                 I'd like to receive health tips and updates via email
                             </label>
                         </div>
                         
                         <button type="submit" 
-                                class="w-full bg-medical-blue text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                                class="w-full bg-primary text-white py-4 px-6 rounded-2xl font-medium hover:bg-primary-dark transition duration-300">
                             Schedule Appointment
                         </button>
                     </form>
                 </div>
 
                 <div class="space-y-8">
-                    <div class="bg-medical-blue text-white p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-6">Get In Touch</h3>
+                    <div data-aos="fade-left" data-aos-duration="800" class="bg-primary text-white p-10 rounded-3xl">
+                        <h3 class="text-2xl font-light mb-8">Get In Touch</h3>
                         
-                        <div class="space-y-6">
+                        <div class="space-y-8">
                             <div class="flex items-center space-x-4">
-                                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-2xl flex items-center justify-center">
                                     <i class="fas fa-phone text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold">Phone</h4>
-                                    <p class="text-blue-100">+1 (555) 123-4567</p>
+                                    <h4 class="font-medium">Phone</h4>
+                                    <p class="opacity-90 font-light">+1 (555) 123-4567</p>
                                 </div>
                             </div>
                             
                             <div class="flex items-center space-x-4">
-                                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-2xl flex items-center justify-center">
                                     <i class="fas fa-envelope text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold">Email</h4>
-                                    <p class="text-blue-100">info@medcarepro.com</p>
+                                    <h4 class="font-medium">Email</h4>
+                                    <p class="opacity-90 font-light">info@medcare.com</p>
                                 </div>
                             </div>
                             
                             <div class="flex items-center space-x-4">
-                                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-2xl flex items-center justify-center">
                                     <i class="fas fa-map-marker-alt text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold">Address</h4>
-                                    <p class="text-blue-100">123 Health Street<br>Medical City, MC 12345</p>
+                                    <h4 class="font-medium">Address</h4>
+                                    <p class="opacity-90 font-light">123 Health Street<br>Medical City, MC 12345</p>
                                 </div>
                             </div>
                             
                             <div class="flex items-center space-x-4">
-                                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                                <div class="w-12 h-12 bg-white bg-opacity-20 rounded-2xl flex items-center justify-center">
                                     <i class="fas fa-clock text-xl"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold">Hours</h4>
-                                    <div class="text-blue-100 text-sm">
+                                    <h4 class="font-medium">Hours</h4>
+                                    <div class="opacity-90 font-light text-sm">
                                         <p>Mon-Fri: 8:00 AM - 8:00 PM</p>
                                         <p>Saturday: 9:00 AM - 5:00 PM</p>
                                         <p>Sunday: 10:00 AM - 4:00 PM</p>
-                                        <p class="text-yellow-200 font-medium mt-2">24/7 Emergency Care</p>
+                                        <p class="text-white font-medium mt-3">24/7 Emergency Care</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="bg-white p-8 rounded-lg shadow-lg">
-                        <h3 class="text-xl font-bold text-gray-800 mb-4">Emergency Services</h3>
-                        <p class="text-gray-600 mb-4">
+                    <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="800" class="bg-white p-8 rounded-3xl border border-gray-100">
+                        <h3 class="text-xl font-medium text-gray-900 mb-4">Emergency Services</h3>
+                        <p class="text-secondary mb-6 font-light">
                             For medical emergencies, call 911 immediately or visit our emergency department.
                         </p>
-                        <div class="bg-red-50 border border-red-200 p-4 rounded-lg">
-                            <div class="flex items-center space-x-3">
-                                <i class="fas fa-exclamation-triangle text-red-600"></i>
+                        <div class="bg-red-50 border border-red-200 p-6 rounded-2xl">
+                            <div class="flex items-center space-x-4">
+                                <i class="fas fa-exclamation-triangle text-red-600 text-xl"></i>
                                 <div>
-                                    <h4 class="font-semibold text-red-800">Emergency Hotline</h4>
-                                    <p class="text-red-700">+1 (555) 911-HELP</p>
+                                    <h4 class="font-medium text-red-800">Emergency Hotline</h4>
+                                    <p class="text-red-700 font-light">+1 (555) 911-HELP</p>
                                 </div>
                             </div>
                         </div>
@@ -206,6 +222,17 @@
 
     <script src="js/header-footer.js"></script>
     <script src="js/script.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+    </script>
     
     <script>
         document.addEventListener('DOMContentLoaded', function() {

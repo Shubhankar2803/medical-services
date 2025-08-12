@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | MedCare Pro</title>
-    <meta name="description" content="Learn about MedCare Pro's mission to provide quality healthcare with experienced medical professionals.">
+    <title>About Us | MedCare Pro - Experienced Medical Professionals & Healthcare Team</title>
+    <meta name="description" content="Learn about MedCare Pro's mission to provide quality healthcare with experienced medical professionals. 15+ years experience serving 50,000+ patients.">
+    <meta name="keywords" content="about medcare pro, medical team, experienced doctors, healthcare professionals, medical center history, patient care">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://shubhankar2803.github.io/medical-services/about.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32'%3e%3crect width='32' height='32' rx='6' fill='%2310b981'/%3e%3cpath d='M16 8v16M8 16h16' stroke='white' stroke-width='3' stroke-linecap='round'/%3e%3c/svg%3e">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180' width='180' height='180'%3e%3crect width='180' height='180' rx='32' fill='%2310b981'/%3e%3cpath d='M90 40v100M40 90h100' stroke='white' stroke-width='16' stroke-linecap='round'/%3e%3c/svg%3e">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -12,9 +20,13 @@
             theme: {
                 extend: {
                     colors: {
-                        'medical-blue': '#2563eb',
-                        'medical-green': '#059669',
-                        'medical-teal': '#0d9488',
+                        'primary': '#10b981',
+                        'primary-dark': '#059669',
+                        'primary-light': '#34d399',
+                        'primary-50': '#ecfdf5',
+                        'primary-100': '#d1fae5',
+                        'secondary': '#6b7280',
+                        'accent': '#f3f4f6',
                     }
                 }
             }
@@ -22,18 +34,22 @@
     </script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50">
+<body class="bg-white text-gray-900">
     <div id="header-container"></div>
 
-    <section class="bg-gradient-to-r from-medical-blue to-medical-teal text-white py-16">
-        <div class="container mx-auto px-6">
-            <div class="text-center">
-                <h1 class="text-4xl font-bold mb-4">About MedCare Pro</h1>
-                <p class="text-xl text-blue-100">Dedicated to providing exceptional healthcare services</p>
+    <section class="bg-gradient-to-r from-primary to-primary-dark py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-10"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div data-aos="fade-up" data-aos-duration="800" class="text-center">
+                <h1 class="text-5xl font-light mb-4 text-white">About MedCare</h1>
+                <p class="text-xl text-green-100 font-light">Dedicated to simple, effective healthcare</p>
                 <nav class="mt-6">
-                    <ol class="flex justify-center space-x-2 text-blue-200">
-                        <li><a href="index.html" class="hover:text-white">Home</a></li>
+                    <ol class="flex justify-center space-x-2 text-green-200 font-light">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
                         <li class="mx-2">/</li>
                         <li class="text-white">About</li>
                     </ol>
@@ -42,72 +58,70 @@
         </div>
     </section>
 
-    <section class="py-16">
+    <section class="py-20">
         <div class="container mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
-                <div>
-                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Mission</h2>
-                    <p class="text-lg text-gray-600 mb-4">
-                        At MedCare Pro, we are committed to providing exceptional healthcare services with compassion, 
-                        expertise, and innovation. Our mission is to improve the health and well-being of our community 
-                        through comprehensive medical care.
+            <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+                <div data-aos="fade-right" data-aos-duration="800">
+                    <h2 class="text-3xl font-light text-gray-900 mb-6">Our Mission</h2>
+                    <p class="text-lg text-secondary mb-6 font-light leading-relaxed">
+                        At MedCare, we believe healthcare should be simple, accessible, and focused on what matters most—your wellbeing. 
+                        Our approach combines modern medical expertise with genuine care for each patient.
                     </p>
-                    <p class="text-lg text-gray-600 mb-6">
-                        We believe that quality healthcare should be accessible to everyone. Our team of experienced 
-                        medical professionals works tirelessly to ensure that each patient receives personalized, 
-                        evidence-based care in a comfortable and supportive environment.
+                    <p class="text-lg text-secondary mb-8 font-light leading-relaxed">
+                        We're committed to creating an environment where you feel comfortable, heard, and confident 
+                        in the care you receive. Every interaction is designed with your health and peace of mind in focus.
                     </p>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="flex items-center space-x-3">
-                            <div class="w-12 h-12 bg-medical-blue text-white rounded-full flex items-center justify-center">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-primary-100 text-primary rounded-2xl flex items-center justify-center">
                                 <i class="fas fa-award"></i>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-gray-800">15+ Years</h4>
-                                <p class="text-gray-600">Experience</p>
+                                <h4 class="font-medium text-gray-900">15+ Years</h4>
+                                <p class="text-secondary font-light">Experience</p>
                             </div>
                         </div>
-                        <div class="flex items-center space-x-3">
-                            <div class="w-12 h-12 bg-medical-green text-white rounded-full flex items-center justify-center">
+                        <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="800" class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-primary-100 text-primary rounded-2xl flex items-center justify-center">
                                 <i class="fas fa-users"></i>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-gray-800">50,000+</h4>
-                                <p class="text-gray-600">Patients Served</p>
+                                <h4 class="font-medium text-gray-900">50,000+</h4>
+                                <p class="text-secondary font-light">Patients Served</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Why Choose MedCare Pro?</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-center space-x-3">
-                            <i class="fas fa-check-circle text-medical-green"></i>
-                            <span class="text-gray-700">Board-certified physicians</span>
+                <div data-aos="fade-left" data-aos-duration="800" class="bg-primary-50 p-10 rounded-3xl">
+                    <h3 class="text-2xl font-light text-gray-900 mb-8">Why Choose MedCare?</h3>
+                    <ul class="space-y-6">
+                        <li data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" class="flex items-center space-x-4">
+                            <i class="fas fa-check-circle text-primary text-xl"></i>
+                            <span class="text-secondary font-light">Board-certified physicians</span>
                         </li>
-                        <li class="flex items-center space-x-3">
-                            <i class="fas fa-check-circle text-medical-green"></i>
-                            <span class="text-gray-700">State-of-the-art medical equipment</span>
+                        <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="600" class="flex items-center space-x-4">
+                            <i class="fas fa-check-circle text-primary text-xl"></i>
+                            <span class="text-secondary font-light">State-of-the-art equipment</span>
                         </li>
-                        <li class="flex items-center space-x-3">
-                            <i class="fas fa-check-circle text-medical-green"></i>
-                            <span class="text-gray-700">24/7 emergency services</span>
+                        <li data-aos="fade-up" data-aos-delay="300" data-aos-duration="600" class="flex items-center space-x-4">
+                            <i class="fas fa-check-circle text-primary text-xl"></i>
+                            <span class="text-secondary font-light">24/7 emergency services</span>
                         </li>
-                        <li class="flex items-center space-x-3">
-                            <i class="fas fa-check-circle text-medical-green"></i>
-                            <span class="text-gray-700">Patient-centered approach</span>
+                        <li data-aos="fade-up" data-aos-delay="400" data-aos-duration="600" class="flex items-center space-x-4">
+                            <i class="fas fa-check-circle text-primary text-xl"></i>
+                            <span class="text-secondary font-light">Patient-centered approach</span>
                         </li>
-                        <li class="flex items-center space-x-3">
-                            <i class="fas fa-check-circle text-medical-green"></i>
-                            <span class="text-gray-700">Comprehensive care coordination</span>
+                        <li data-aos="fade-up" data-aos-delay="500" data-aos-duration="600" class="flex items-center space-x-4">
+                            <i class="fas fa-check-circle text-primary text-xl"></i>
+                            <span class="text-secondary font-light">Comprehensive care coordination</span>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Meet Our Doctors</h2>
-                <p class="text-xl text-gray-600">Experienced medical professionals dedicated to your health</p>
+            <div data-aos="fade-up" data-aos-duration="800" class="text-center mb-16">
+                <h2 class="text-3xl font-light text-gray-900 mb-4">Our Team</h2>
+                <p class="text-xl text-secondary font-light">Experienced professionals dedicated to your health</p>
             </div>
             
             <div id="doctors-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -119,5 +133,16 @@
 
     <script src="js/header-footer.js"></script>
     <script src="js/script.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>
